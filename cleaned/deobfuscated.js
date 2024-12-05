@@ -122,10 +122,8 @@ function a1_0x830c(_0x26cdd3, _0x1dedbf) {
 
 (() => {
     'use strict';
-    var _0x556ad6;
-    !function (_0x33cd44) {
-        _0x33cd44['APPLE'] = '7591600zpsSsP', _0x33cd44['USD'] = 'Linux', _0x33cd44['now'] = 'Apple', _0x33cd44['table'] = 'resolvedOptions';
-    }(_0x556ad6 ? true : _0x556ad6 = {});
+    var _0x556ad6 = {APPLE: '7591600zpsSsP', USD: 'Linux', now: 'Apple', table: 'resolvedOptions'}
+    console.log(_0x556ad6);
     const _0x50a6ee = !self['match'] ? self['WorkerGlobalScope'] : false, _0x4f1292 = function () {
         const _0x15c41d = [][ 'Collator' ]; // ????? Should there be whitespaces or not?
         try {
