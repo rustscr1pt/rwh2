@@ -2,14 +2,21 @@ const esprima = require('esprima');
 const fs = require('fs');
 const walk = require('estraverse');
 const escodegen = require('escodegen');
-const my_ast_wrapper = require("./deo_wrapper");
 
-const obfuscated = fs.readFileSync('original.js', "utf-8");
+const obfuscated = fs.readFileSync('test.js', "utf-8");
 const ast = esprima.parseScript(obfuscated);
 
 const constants = {};
 const arrays = {};
 
+
+/**
+ * Handles self-assignment expressions and removes them from the AST.
+ *
+ * @param {Object} node - The current AST node being traversed.
+ * @description Checks if the node is an assignment expression where the left-hand side
+ * and the right-hand side are the same, and removes the node from the AST.
+ */
 function handleSelfAssignment(node) {
     if (node.type === 'ExpressionStatement' && node.expression.type === 'AssignmentExpression') {
         if (node.expression.left.name === node.expression.right.name) {
@@ -18,6 +25,13 @@ function handleSelfAssignment(node) {
     }
 }
 
+/**
+ * Converts logical expressions (&&, ||) into conditional expressions.
+ *
+ * @param {Object} node - The AST node representing a logical expression.
+ * @description Transforms `&&` into a conditional expression with `false` as the alternate,
+ * and `||` into a conditional expression with `true` as the consequent.
+ */
 function handleLogicalExpressions(node) {
     if (node.operator === '&&') {
         node.type = 'ConditionalExpression';
@@ -32,6 +46,13 @@ function handleLogicalExpressions(node) {
     }
 }
 
+/**
+ * Simplifies if statements based on constant conditions.
+ *
+ * @param {Object} node - The AST node representing an if statement.
+ * @returns {Object} - A simplified version of the node or an empty statement if no alternative exists.
+ * @description If the test condition is a literal, returns the appropriate consequent or alternate branch.
+ */
 function handleIfStatements(node) {
     if (node.test.type === 'Literal') {
         if (node.test.value) {
@@ -39,17 +60,6 @@ function handleIfStatements(node) {
         } else {
             return node.alternate || { type: 'EmptyStatement' };
         }
-    }
-}
-
-function writeAstToFile(ast) {
-    try {
-        const json = JSON.stringify(ast, null, 2);
-        fs.writeFileSync("./output.json", json, 'utf8');
-        console.log('ast is written')
-    }
-    catch (err) {
-        console.log(err)
     }
 }
 
@@ -143,17 +153,13 @@ walk.traverse(ast, {
     },
 });
 
-//writeAstToFile(ast);
-
-// const ast_wrapper = my_ast_wrapper(ast);
-
 const deobfuscatedCode = escodegen.generate(ast);
 // Assuming you already have the AST
 const compactCode = escodegen.generate(ast, {
     format: {
-        indent: { style: '' },  // Remove indentation
-        quotes: 'single',       // Use single quotes for strings
-        compact: true,          // Remove unnecessary spaces
+        indent: { style: '' },
+        quotes: 'single',
+        compact: true,
     }
 });
 
