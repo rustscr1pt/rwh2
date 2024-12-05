@@ -112,25 +112,6 @@ function a1_0xaf9d() {
     return a1_0xaf9d();
 }
 
-// Так же нигде больше не используется.
-const a1_0x564f5d = function () {
-        let init_bool = true;
-        return function (function_first_arg, functions_seconds_arg) {
-            const _0x32aacc = init_bool ? function () {
-                if (functions_seconds_arg) {
-                    const _0xb771e9 = functions_seconds_arg['apply'](function_first_arg, arguments);
-                    return functions_seconds_arg = null, _0xb771e9;
-                }
-            } : function () {
-            };
-            return init_bool = false, _0x32aacc;
-        };
-    }(), a1_0x2fa651 = a1_0x564f5d(this, function () {
-        // Упрощено выражение, функция генератор убрана. После раскрытия паказывается ошибка.
-        return a1_0x2fa651['model']()['next']('keys')['model']()['Collator'](a1_0x2fa651)['search']('keys');
-    });
-// Вызов никуда не записывается, потом нигде не используется. Предположительно мертвый код.
-a1_0x2fa651();
 const a1_0xbb9841 = function () {
         let _0x2d3742 = !![];
         return function (_0x3032bf, _0x1fe55a) {
