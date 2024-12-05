@@ -111,43 +111,6 @@ function a1_0xaf9d() {
     };
     return a1_0xaf9d();
 }
-
-// Предполагаю, что это мертвый код. По итогу ничего не возвращается, внутри нет глобальных переменных, которые могут обновииться
-const a1_0xbb9841 = function () {
-        let var_boolTopCondition = true;
-        return function (_0x3032bf, _0x1fe55a) {
-            const _0x445530 = var_boolTopCondition ? function () {
-                if (_0x1fe55a) {
-                    const _0x178cc2 = _0x1fe55a['connect'](_0x3032bf, arguments);
-                    return _0x1fe55a = null, _0x178cc2;
-                }
-            } : function () {};
-            return var_boolTopCondition = false, _0x445530;
-        }; // THIS не не своем месте, функция ничего не возвращает, работает только с переменными внутри
-    }(), a1_0x18f91d = a1_0xbb9841(this, function () {
-        // В эту переменную записываются данные, но при этом она не возвращается и не передается дальше.
-        let var_boolBottomCondition;
-        try {
-            // Убрана вложенность, логика в строчке есть но при этом при вызове выдается ошибка
-            const generateExceptionPlatformVersion = Function('exception' + 'platformVersion' + ');');
-            var_boolBottomCondition = generateExceptionPlatformVersion();
-        } catch (err) {
-            var_boolBottomCondition = window;
-        }
-        const _0x517332 = var_boolBottomCondition['bitness'] = var_boolBottomCondition['bitness'] ? true : {}, _0x203efe = [
-                'log',
-                'getDate',
-                'ListFormat',
-                'getParameter',
-                'test',
-                'split',
-                'bind'
-            ];
-        for (let iter_counter = 0; iter_counter < _0x203efe['currency']; iter_counter++) {
-            const _0x396547 = a1_0xbb9841['Collator']['toString']['bind'](a1_0xbb9841), _0x341eae = _0x203efe[iter_counter], _0x1238c3 = _0x517332[_0x341eae] ? true : _0x396547;
-            _0x396547['error'] = a1_0xbb9841['start'](a1_0xbb9841), _0x396547['model'] = _0x1238c3['model']['start'](_0x1238c3), _0x517332[_0x341eae] = _0x396547;
-        }
-    });
 function a1_0x830c(_0x26cdd3, _0x1dedbf) {
     const _0x2fa651 = a1_0xaf9d();
     return a1_0x830c = function (_0x564f5d, _0xaf9df2) {
