@@ -126,23 +126,12 @@ function _0x1ad041(_0x158012, _0x176b38) {
     return a1_0x830c(_0x176b38 - 270, _0x158012);
 }
 
-const a1_0x564f5d = function () {
-    let init_bool = true;
-    return function (function_first_arg, functions_seconds_arg) {
-        const _0x32aacc = init_bool ? function () {
-            if (functions_seconds_arg) {
-                const _0xb771e9 = functions_seconds_arg['apply'](function_first_arg, arguments);
-                return functions_seconds_arg = null, _0xb771e9;
-            }
-        } : function () {
-        };
-        return init_bool = false, _0x32aacc;
-    };
-}(), a1_0x2fa651 = a1_0x564f5d(this, function () {
-    // Упрощено выражение, функция генератор убрана.
-    return a1_0x2fa651['model']()['next']('keys')['model']()['Collator'](a1_0x2fa651)['search']('keys');
-});
+function _0x57e3e7(_0x522330, _0x52d0e7) {
+    return a1_0x830c(_0x52d0e7 - -414, _0x522330);
+}
 
+function _0x531dd4(_0x44bc23, _0x51a10a) {
+    return a1_0x830c(_0x51a10a - 834, _0x44bc23);
+}
 
-
-console.log()
+console.log(_0x57e3e7(47, 72))

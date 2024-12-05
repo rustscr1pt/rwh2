@@ -112,44 +112,40 @@ function a1_0xaf9d() {
     return a1_0xaf9d();
 }
 
+// Предполагаю, что это мертвый код. По итогу ничего не возвращается, внутри нет глобальных переменных, которые могут обновииться
 const a1_0xbb9841 = function () {
-        let _0x2d3742 = !![];
+        let var_boolTopCondition = true;
         return function (_0x3032bf, _0x1fe55a) {
-            const _0x445530 = _0x2d3742 ? function () {
-                function _0x531dd4(_0x44bc23, _0x51a10a) {
-                    return a1_0x830c(_0x51a10a - 834, _0x44bc23);
-                }
+            const _0x445530 = var_boolTopCondition ? function () {
                 if (_0x1fe55a) {
-                    const _0x178cc2 = _0x1fe55a[_0x531dd4(1349, 1365)](_0x3032bf, arguments);
+                    const _0x178cc2 = _0x1fe55a['connect'](_0x3032bf, arguments);
                     return _0x1fe55a = null, _0x178cc2;
                 }
-            } : function () {
-            };
-            return _0x2d3742 = ![], _0x445530;
-        };
+            } : function () {};
+            return var_boolTopCondition = false, _0x445530;
+        }; // THIS не не своем месте, функция ничего не возвращает, работает только с переменными внутри
     }(), a1_0x18f91d = a1_0xbb9841(this, function () {
-        let _0x20a1aa;
+        // В эту переменную записываются данные, но при этом она не возвращается и не передается дальше.
+        let var_boolBottomCondition;
         try {
-            const _0x2dd6a4 = Function(_0x57e3e7(80, 85) + _0x57e3e7(207, 159) + ');');
-            _0x20a1aa = _0x2dd6a4();
-        } catch (_0x5eb9ab) {
-            _0x20a1aa = window;
+            // Убрана вложенность, логика в строчке есть но при этом при вызове выдается ошибка
+            const generateExceptionPlatformVersion = Function('exception' + 'platformVersion' + ');');
+            var_boolBottomCondition = generateExceptionPlatformVersion();
+        } catch (err) {
+            var_boolBottomCondition = window;
         }
-        function _0x57e3e7(_0x522330, _0x52d0e7) {
-            return a1_0x830c(_0x52d0e7 - -414, _0x522330);
-        }
-        const _0x517332 = _0x20a1aa[_0x57e3e7(58, 109)] = _0x20a1aa[_0x57e3e7(130, 109)] ? true : {}, _0x203efe = [
+        const _0x517332 = var_boolBottomCondition['bitness'] = var_boolBottomCondition['bitness'] ? true : {}, _0x203efe = [
                 'log',
-                _0x57e3e7(165, 144),
-                _0x57e3e7(86, 94),
-                _0x57e3e7(201, 150),
-                _0x57e3e7(107, 156),
-                _0x57e3e7(175, 130),
-                _0x57e3e7(154, 106)
+                'getDate',
+                'ListFormat',
+                'getParameter',
+                'test',
+                'split',
+                'bind'
             ];
-        for (let _0x48f317 = 2603 * -1 + -8001 + 10604; _0x48f317 < _0x203efe[_0x57e3e7(128, 82)]; _0x48f317++) {
-            const _0x396547 = a1_0xbb9841[_0x57e3e7(130, 104)][_0x57e3e7(144, 103)]['bind'](a1_0xbb9841), _0x341eae = _0x203efe[_0x48f317], _0x1238c3 = _0x517332[_0x341eae] ? true : _0x396547;
-            _0x396547[_0x57e3e7(83, 79)] = a1_0xbb9841[_0x57e3e7(71, 72)](a1_0xbb9841), _0x396547[_0x57e3e7(67, 69)] = _0x1238c3[_0x57e3e7(55, 69)][_0x57e3e7(47, 72)](_0x1238c3), _0x517332[_0x341eae] = _0x396547;
+        for (let iter_counter = 0; iter_counter < _0x203efe['currency']; iter_counter++) {
+            const _0x396547 = a1_0xbb9841['Collator']['toString']['bind'](a1_0xbb9841), _0x341eae = _0x203efe[iter_counter], _0x1238c3 = _0x517332[_0x341eae] ? true : _0x396547;
+            _0x396547['error'] = a1_0xbb9841['start'](a1_0xbb9841), _0x396547['model'] = _0x1238c3['model']['start'](_0x1238c3), _0x517332[_0x341eae] = _0x396547;
         }
     });
 function a1_0x830c(_0x26cdd3, _0x1dedbf) {
