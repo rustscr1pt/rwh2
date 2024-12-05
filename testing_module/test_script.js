@@ -122,4 +122,27 @@ function _0x162aad(_0x3dcec5, _0x121d2d) {
     return a1_0x830c(_0x3dcec5 - 364, _0x121d2d);
 }
 
-console.log(1505347 + 70129 * -11)
+function _0x1ad041(_0x158012, _0x176b38) {
+    return a1_0x830c(_0x176b38 - 270, _0x158012);
+}
+
+const a1_0x564f5d = function () {
+    let init_bool = true;
+    return function (function_first_arg, functions_seconds_arg) {
+        const _0x32aacc = init_bool ? function () {
+            if (functions_seconds_arg) {
+                const _0xb771e9 = functions_seconds_arg['apply'](function_first_arg, arguments);
+                return functions_seconds_arg = null, _0xb771e9;
+            }
+        } : function () {
+        };
+        return init_bool = false, _0x32aacc;
+    };
+}(), a1_0x2fa651 = a1_0x564f5d(this, function () {
+    // Упрощено выражение, функция генератор убрана.
+    return a1_0x2fa651['model']()['next']('keys')['model']()['Collator'](a1_0x2fa651)['search']('keys');
+});
+
+
+
+console.log()

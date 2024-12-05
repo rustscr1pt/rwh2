@@ -112,25 +112,24 @@ function a1_0xaf9d() {
     return a1_0xaf9d();
 }
 
-
+// Так же нигде больше не используется.
 const a1_0x564f5d = function () {
-        let _0x8d75 = !![];
-        return function (_0x1ce344, _0xd710d1) {
-            const _0x32aacc = _0x8d75 ? function () {
-                if (_0xd710d1) {
-                    const _0xb771e9 = _0xd710d1['apply'](_0x1ce344, arguments);
-                    return _0xd710d1 = null, _0xb771e9;
+        let init_bool = true;
+        return function (function_first_arg, functions_seconds_arg) {
+            const _0x32aacc = init_bool ? function () {
+                if (functions_seconds_arg) {
+                    const _0xb771e9 = functions_seconds_arg['apply'](function_first_arg, arguments);
+                    return functions_seconds_arg = null, _0xb771e9;
                 }
             } : function () {
             };
-            return _0x8d75 = ![], _0x32aacc;
+            return init_bool = false, _0x32aacc;
         };
     }(), a1_0x2fa651 = a1_0x564f5d(this, function () {
-        function _0x1ad041(_0x158012, _0x176b38) {
-            return a1_0x830c(_0x176b38 - 270, _0x158012);
-        }
-        return a1_0x2fa651[_0x1ad041(716, 753)]()[_0x1ad041(793, 841)](_0x1ad041(802, 831))[_0x1ad041(744, 753)]()[_0x1ad041(754, 788)](a1_0x2fa651)['search'](_0x1ad041(851, 831));
+        // Упрощено выражение, функция генератор убрана. После раскрытия паказывается ошибка.
+        return a1_0x2fa651['model']()['next']('keys')['model']()['Collator'](a1_0x2fa651)['search']('keys');
     });
+// Вызов никуда не записывается, потом нигде не используется. Предположительно мертвый код.
 a1_0x2fa651();
 const a1_0xbb9841 = function () {
         let _0x2d3742 = !![];
