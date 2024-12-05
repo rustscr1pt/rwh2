@@ -4,7 +4,7 @@ const walk = require('estraverse');
 const escodegen = require('escodegen');
 const my_ast_wrapper = require("./deo_wrapper");
 
-const obfuscated = fs.readFileSync('../original.js', "utf-8");
+const obfuscated = fs.readFileSync('original.js', "utf-8");
 const ast = esprima.parseScript(obfuscated);
 
 const constants = {};
@@ -145,11 +145,11 @@ walk.traverse(ast, {
 
 //writeAstToFile(ast);
 
-const ast_wrapper = my_ast_wrapper(ast);
+// const ast_wrapper = my_ast_wrapper(ast);
 
-const deobfuscatedCode = escodegen.generate(ast_wrapper);
+const deobfuscatedCode = escodegen.generate(ast);
 // Assuming you already have the AST
-const compactCode = escodegen.generate(ast_wrapper, {
+const compactCode = escodegen.generate(ast, {
     format: {
         indent: { style: '' },  // Remove indentation
         quotes: 'single',       // Use single quotes for strings
