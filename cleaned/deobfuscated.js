@@ -111,22 +111,8 @@ function a1_0xaf9d() {
     };
     return a1_0xaf9d();
 }
-(function (_0x195f05, _0x592d2b) { // This IIFE only infinite cycles. So it could be removed
-    const _var_gotCommandsArray = _0x195f05();
-    function _0x162aad(_0x3dcec5, _0x121d2d) {
-        return a1_0x830c(_0x3dcec5 - 364, _0x121d2d);
-    }
-    while (true) { // Цикл не прибавляет команды внутрь оригинального списка, мертвый код
-        try {
-            if (NaN === _0x592d2b)
-                break;
-            else
-                _var_gotCommandsArray['push'](_var_gotCommandsArray['shift']());
-        } catch (_0xf60cb7) {
-            _var_gotCommandsArray['push'](_var_gotCommandsArray['shift']());
-        }
-    }
-}(a1_0xaf9d, 733928));
+
+
 const a1_0x564f5d = function () {
         let _0x8d75 = !![];
         return function (_0x1ce344, _0xd710d1) {
