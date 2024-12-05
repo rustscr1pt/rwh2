@@ -122,4 +122,4 @@ function _0x162aad(_0x3dcec5, _0x121d2d) {
     return a1_0x830c(_0x3dcec5 - 364, _0x121d2d);
 }
 
-console.log(!![])
+console.log(1505347 + 70129 * -11)
