@@ -37,6 +37,17 @@
         };
     })();
 
+    // // Реализация "корзины" ???
+    // const trashBin = (() => {
+    //     const bin = [];
+    //     return {
+    //         getBin: () => bin,
+    //         sendToTrash: (name, value, additionalData = undefined) => {
+    //             bin.push({ name, value, additionalData });
+    //         }
+    //     };
+    // })();
+
     // Образец тестирования доступности WebGL на устройстве пользователя
     const detectWebGLRenderer = () => {
         const canvas = document.createElement('canvas');
